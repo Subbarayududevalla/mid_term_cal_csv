@@ -1,4 +1,4 @@
-## Calculator Plugin for Your Application
+## Calculator Plugin this Application
 This plugin provides a simple calculator functionality for your application. Users can perform basic arithmetic operations and store the history in a CSV file.
 
 # Features
