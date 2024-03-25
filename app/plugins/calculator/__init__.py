@@ -56,7 +56,7 @@ class Calculator:
         """
         Initializes the calculator with an empty DataFrame for history.
         """
-        self.history_df = pd.DataFrame(columns=[ "operand1", "operation","operand2", "result"])
+        self.history_df = pd.DataFrame(columns=[ "num1", "operation","num2", "result"])
 
     def calculate(self, user_input):
         """
@@ -79,29 +79,29 @@ class Calculator:
             return None  # Indicate no calculation result
 
         if len(expression) != 3:
-            raise ValueError("Invalid expression format. Please enter a valid operation with operands.")
+            raise ValueError("Invalid expression format. Please enter a valid operation with numbers.")
 
         try:
-            # Convert operands to float, removing any leading/trailing spaces
-            operand1 = float(expression[0].strip())
-            operand2 = float(expression[2].strip())
+            # Convert nums to float, removing any leading/trailing spaces
+            num1 = float(expression[0].strip())
+            num2 = float(expression[2].strip())
 
             if expression[1] == "+":
-                result = operand1 + operand2
+                result = num1 + num2
             elif expression[1] == "-":
-                result = operand1 - operand2
+                result = num1 - num2
             elif expression[1] == "*":
-                result = operand1 * operand2
+                result = num1 * num2
             elif expression[1] == "/":
-                result = operand1 / operand2
+                result = num1 / num2
             else:
                 raise ValueError("Invalid operation.")
 
             # Save calculation to DataFrame
             self.history_df = self.history_df._append({
-                "operand1": operand1,
+                "num1": num1,
                 "operation": expression[1],
-                "operand2": operand2,
+                "num2": num2,
                 "result": result
             }, ignore_index=True)
 
