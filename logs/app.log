@@ -10,3 +10,15 @@
 2024-03-25 13:14:36,658 - root - INFO - Calculator history saved to ./csv_history/calculator_history_250324131436.csv
 2024-03-25 13:14:40,817 - root - INFO - Application exit.
 2024-03-25 13:14:40,817 - root - INFO - Application shutdown.
+2024-03-25 15:23:13,793 - root - INFO - Logging configured.
+2024-03-25 15:23:13,794 - root - INFO - Environment variables loaded.
+2024-03-25 15:23:13,796 - root - INFO - Command 'calculator' from plugin 'calculator' registered.
+2024-03-25 15:23:13,798 - root - INFO - Registered command 'CalculatorCommand' for plugin 'calculator'
+2024-03-25 15:23:13,799 - root - INFO - Command 'exit' from plugin 'exit' registered.
+2024-03-25 15:23:13,800 - root - INFO - Registered command 'ExitCommand' for plugin 'exit'
+2024-03-25 15:23:13,803 - root - INFO - Command 'greet' from plugin 'greet' registered.
+2024-03-25 15:23:13,803 - root - INFO - Registered command 'GreetCommand' for plugin 'greet'
+2024-03-25 15:23:13,804 - root - INFO - Application started. Type 'exit' to exit.
+2024-03-25 15:23:13,804 - root - INFO - Hello, World!
+2024-03-25 15:23:13,804 - root - INFO - Application exit.
+2024-03-25 15:23:13,805 - root - INFO - Application shutdown.
